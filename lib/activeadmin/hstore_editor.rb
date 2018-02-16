@@ -6,7 +6,7 @@ module ActiveAdmin
   module HstoreEditor
     class Engine < ::Rails::Engine
       initializer :hstore_editor, group: :all do |app|
-        config.assets.precompile += %w[img/jsoneditor-icons.png]
+        app.config.assets.precompile += %w[img/jsoneditor-icons.png]
       end
 
       rake_tasks do
